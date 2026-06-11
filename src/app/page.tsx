@@ -52,8 +52,8 @@ export default function GraduationInvite() {
   // Interactive Mini-Map State (active step along the path to Building G)
   const [activeMapStep, setActiveMapStep] = useState(0);
 
-  // Target Date: June 16, 2026, 09:30 AM (GMT+7)
-  const targetDate = new Date("2026-06-16T09:30:00+07:00").getTime();
+  // Target Date: June 15, 2026, 01:30 PM (GMT+7)
+  const targetDate = new Date("2026-06-15T13:30:00+07:00").getTime();
 
   useEffect(() => {
     // Load wishes from Supabase
@@ -200,11 +200,11 @@ export default function GraduationInvite() {
 
   // Calendar Export Logic
   const handleAddToCalendar = () => {
-    const title = "Lễ Tốt Nghiệp Trần Duy Khải";
-    const details = "Lễ Tốt Nghiệp Đại Học của Trần Duy Khải tại Đại Học Duy Tân. Sự hiện diện của bạn là niềm vinh hạnh lớn đối với mình!";
-    const location = "Tòa nhà G, Đại học Duy Tân, 120 Hoàng Minh Thảo, Hòa Khánh Nam, Liên Chiểu, Đà Nẵng";
-    const startDate = "20260616T093000";
-    const endDate = "20260616T120000";
+    const title = "Lễ Tốt Nghiệp Bùi Lê Tuấn";
+    const details = "Lễ Tốt Nghiệp Đại Học của Bùi Lê Tuấn — ngành Kỹ thuật Phần mềm CMU, Khoa Đào tạo Quốc tế, Đại Học Duy Tân. Sự hiện diện của bạn là niềm vinh hạnh lớn đối với mình!";
+    const location = "Sảnh Tòa nhà G, Đại học Duy Tân, 120 Hoàng Minh Thảo, Hòa Khánh Nam, Liên Chiểu, Đà Nẵng";
+    const startDate = "20260615T133000";
+    const endDate = "20260615T163000";
 
     // Google Calendar Link
     const gCalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${startDate}/${endDate}&details=${encodeURIComponent(details)}&location=${encodeURIComponent(location)}`;
@@ -273,7 +273,7 @@ export default function GraduationInvite() {
               <div className="relative w-full h-[85%] rounded-2xl overflow-hidden border border-zinc-100 bg-[#FDFBF7]">
                 <Image 
                   src="/hero-avatar.jpg" 
-                  alt="Trần Duy Khải Graduation" 
+                  alt="Bùi Lê Tuấn Graduation" 
                   fill 
                   className="object-cover"
                   priority
@@ -282,7 +282,7 @@ export default function GraduationInvite() {
               
               {/* Signature/Label in Frame (like a Polaroid) */}
               <div className="text-center pt-3 text-[#800020] font-serif font-bold tracking-wider text-sm md:text-base">
-                🎓 Trần Duy Khải &bull; DTU 2026
+                🎓 Bùi Lê Tuấn &bull; DTU 2026
               </div>
 
               {/* Floating overlay 3D cap/ribbon element in the corner */}
@@ -320,12 +320,12 @@ export default function GraduationInvite() {
           <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-[#1E2022] leading-tight max-w-4xl px-2 sm:px-3">
             Lễ Tốt Nghiệp của <br className="sm:hidden" />
             <span className="text-[#B72818] text-shadow-3d-burgundy font-serif relative inline-block py-1">
-              Trần Duy Khải
+              Bùi Lê Tuấn
             </span>
           </h1>
 
           <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg lg:text-xl text-zinc-600 max-w-xl mx-auto italic font-light px-3 sm:px-4 leading-relaxed">
-            &ldquo;Hành trình vạn dặm bắt đầu từ một bước chân. Sự đồng hành và ủng hộ của mọi người chính là động lực lớn nhất để mình hoàn thành chặng đường này.&rdquo;
+            &ldquo;Từ những dòng code đầu tiên đến ngày khoác áo cử nhân — hành trình này không chỉ là kiến thức, mà còn là những con người đã đồng hành cùng mình.&rdquo;
           </p>
         </motion.div>
       </header>
@@ -399,7 +399,7 @@ export default function GraduationInvite() {
           </AnimatePresence>
 
           <p className="mt-4 sm:mt-8 text-[10px] sm:text-xs text-zinc-400 px-2">
-            Giờ làm lễ chính thức: 09h30, Thứ Ba ngày 16/06/2026 (Múi giờ Việt Nam GMT+7)
+            Giờ làm lễ chính thức: 13h30, Thứ Hai ngày 15/06/2026 (Múi giờ Việt Nam GMT+7)
           </p>
         </motion.div>
       </section>
@@ -426,8 +426,8 @@ export default function GraduationInvite() {
                   </div>
                   <div>
                     <h3 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white/60 mb-1">Thời gian</h3>
-                    <p className="font-serif text-lg sm:text-xl md:text-2xl font-semibold">09:30 AM &bull; Thứ Ba</p>
-                    <p className="text-zinc-300 text-xs sm:text-sm mt-1">Ngày 16 tháng 06 năm 2026</p>
+                    <p className="font-serif text-lg sm:text-xl md:text-2xl font-semibold">01:30 PM &bull; Thứ Hai</p>
+                    <p className="text-zinc-300 text-xs sm:text-sm mt-1">Ngày 15 tháng 06 năm 2026</p>
                   </div>
                 </div>
 
@@ -437,7 +437,7 @@ export default function GraduationInvite() {
                   </div>
                   <div>
                     <h3 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white/60 mb-1">Địa điểm</h3>
-                    <p className="font-serif text-base sm:text-lg md:text-xl font-semibold">Hội trường lớn, Tòa nhà G</p>
+                    <p className="font-serif text-base sm:text-lg md:text-xl font-semibold">Sảnh Tòa nhà G</p>
                     <p className="text-zinc-300 text-xs sm:text-sm mt-1 leading-relaxed">
                       Trường Đại học Duy Tân, 120 Hoàng Minh Thảo, Hòa Khánh Nam, Liên Chiểu, Đà Nẵng.
                     </p>
@@ -953,7 +953,7 @@ export default function GraduationInvite() {
                 <div className="mt-3 sm:mt-4 flex justify-center sm:justify-end">
                   <div className="text-right">
                     <span className="font-serif text-base sm:text-lg font-bold text-[#B72818] tracking-wide block">
-                      Trần Duy Khải
+                      Bùi Lê Tuấn
                     </span>
                     <span className="text-[8px] sm:text-[10px] text-zinc-400 uppercase tracking-widest">
                       Tốt Nghiệp 2026
@@ -969,7 +969,7 @@ export default function GraduationInvite() {
       {/* Footer */}
       <footer className="w-full py-6 sm:py-8 px-3 sm:px-4 text-center text-zinc-400 text-[10px] sm:text-xs border-t border-zinc-200/50 mt-12 sm:mt-16 bg-white/30 backdrop-blur z-10 relative">
         <p className="font-medium text-zinc-500 text-[10px] sm:text-xs">
-          &copy; 2026 Trần Duy Khải. Made with ❤️ for Graduation Celebration.
+          &copy; 2026 Bùi Lê Tuấn. Made with ❤️ for Graduation Celebration.
         </p>
         <p className="text-[9px] sm:text-[10px] text-zinc-400 mt-1">
           Đại học Duy Tân - DTU

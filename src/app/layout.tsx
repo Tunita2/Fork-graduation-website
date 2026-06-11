@@ -15,8 +15,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Lễ Tốt Nghiệp của Trần Duy Khải",
-  description: "Trân trọng kính mời mọi người đến tham dự Lễ tốt nghiệp của Trần Duy Khải tại Đại học Duy Tân vào ngày 16/06/2026. Sự hiện diện của mọi người là niềm vinh hạnh lớn đối với mình!",
+  title: "Lễ Tốt Nghiệp của Bùi Lê Tuấn",
+  description: "Trân trọng kính mời mọi người đến tham dự Lễ tốt nghiệp của Bùi Lê Tuấn — ngành Kỹ thuật Phần mềm CMU, Khoa Đào tạo Quốc tế, Đại học Duy Tân vào lúc 13h30 ngày 15/06/2026. Sự hiện diện của mọi người là niềm vinh hạnh lớn đối với mình!",
 };
 
 export default function RootLayout({
