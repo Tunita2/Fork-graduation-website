@@ -1,0 +1,208 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FDFBF7;
+  --foreground: #1E2022;
+  --primary: #800020;
+  --primary-dark: #5a0016;
+  --primary-light: #a62b48;
+  --cream: #FDFBF7;
+  --charcoal: #1E2022;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+  --color-cream: var(--cream);
+  --color-charcoal: var(--charcoal);
+  --font-sans: var(--font-outfit), var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, Cambria, serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* 3D claymorphic & neumorphic utility classes */
+.clay-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 24px;
+  box-shadow: 
+    inset 2px 2px 6px rgba(255, 255, 255, 0.9), 
+    inset -4px -4px 10px rgba(0, 0, 0, 0.04), 
+    8px 12px 24px rgba(0, 0, 0, 0.04),
+    -4px -4px 15px rgba(255, 255, 255, 0.5);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.clay-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 
+    inset 2px 2px 6px rgba(255, 255, 255, 0.9), 
+    inset -4px -4px 10px rgba(0, 0, 0, 0.04), 
+    12px 20px 32px rgba(0, 0, 0, 0.07),
+    -4px -4px 20px rgba(255, 255, 255, 0.6);
+}
+
+.clay-card-burgundy {
+  background: linear-gradient(135deg, #800020 0%, #600018 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  box-shadow: 
+    inset 2px 2px 6px rgba(255, 255, 255, 0.25), 
+    inset -4px -4px 10px rgba(0, 0, 0, 0.3), 
+    8px 12px 24px rgba(128, 0, 32, 0.25),
+    -4px -4px 15px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.clay-card-burgundy:hover {
+  transform: translateY(-8px);
+  box-shadow: 
+    inset 2px 2px 6px rgba(255, 255, 255, 0.3), 
+    inset -4px -4px 10px rgba(0, 0, 0, 0.35), 
+    12px 20px 32px rgba(128, 0, 32, 0.35),
+    -4px -4px 20px rgba(255, 255, 255, 0.08);
+}
+
+/* 3D Neumorphic Buttons */
+.btn-3d-burgundy {
+  background-color: #800020;
+  color: #FDFBF7;
+  font-weight: 600;
+  border-radius: 16px;
+  border: 1px solid #991033;
+  box-shadow: 
+    0 6px 0 #500014,
+    0 12px 16px rgba(128, 0, 32, 0.25),
+    inset 0 1px 1px rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+  transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-3d-burgundy:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 8px 0 #500014,
+    0 16px 20px rgba(128, 0, 32, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.35);
+}
+
+.btn-3d-burgundy:active {
+  transform: translateY(2px);
+  box-shadow: 
+    0 1px 0 #500014,
+    0 4px 6px rgba(128, 0, 32, 0.15),
+    inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn-3d-cream {
+  background-color: #FDFBF7;
+  color: #800020;
+  font-weight: 600;
+  border-radius: 16px;
+  border: 1px solid rgba(128, 0, 32, 0.15);
+  box-shadow: 
+    0 6px 0 rgba(128, 0, 32, 0.15),
+    0 12px 16px rgba(0, 0, 0, 0.05),
+    inset 0 1px 1px rgba(255, 255, 255, 0.95);
+  transform: translateY(-3px);
+  transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-3d-cream:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 8px 0 rgba(128, 0, 32, 0.15),
+    0 16px 20px rgba(0, 0, 0, 0.08),
+    inset 0 1px 1px rgba(255, 255, 255, 0.98);
+}
+
+.btn-3d-cream:active {
+  transform: translateY(2px);
+  box-shadow: 
+    0 1px 0 rgba(128, 0, 32, 0.15),
+    0 4px 6px rgba(0, 0, 0, 0.03),
+    inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* 3D text shadow */
+.text-shadow-3d {
+  text-shadow: 
+    0 1px 0 #ccc,
+    0 2px 0 #c5c5c5,
+    0 3px 0 #bbb,
+    0 4px 0 #b0b0b0,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+.text-shadow-3d-burgundy {
+  text-shadow: 
+    0 1px 0 #600018,
+    0 2px 0 #550014,
+    0 3px 0 #4a0010,
+    0 4px 0 #40000d,
+    0 5px 0 #35000a,
+    0 6px 1px rgba(0,0,0,.2),
+    0 0 5px rgba(128,0,32,.2),
+    0 1px 3px rgba(128,0,32,.3),
+    0 3px 5px rgba(128,0,32,.2),
+    0 5px 10px rgba(128,0,32,.25),
+    0 10px 15px rgba(0,0,0,.15);
+}
+
+/* Custom 3D countdown blocks */
+.countdown-block {
+  background: #FDFBF7;
+  border: 1px solid rgba(128, 0, 32, 0.1);
+  border-radius: 20px;
+  box-shadow: 
+    0 8px 0 rgba(128, 0, 32, 0.15),
+    0 15px 20px rgba(0, 0, 0, 0.05),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.9);
+  transform: rotateX(10deg);
+}
+
+/* Glassmorphism card */
+.glass-card {
+  background: rgba(253, 251, 247, 0.65);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 
+    inset 2px 2px 6px rgba(255, 255, 255, 0.8),
+    inset -2px -2px 6px rgba(0, 0, 0, 0.02),
+    8px 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* 3D Flip Card Animation classes */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+

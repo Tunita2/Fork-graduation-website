@@ -1,0 +1,38 @@
+import type { Metadata } from "next";
+import { Outfit, Playfair_Display } from "next/font/google";
+import "./globals.css";
+
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
+
+export const metadata: Metadata = {
+  title: "Lễ Tốt Nghiệp của Trần Duy Khải",
+  description: "Trân trọng kính mời mọi người đến tham dự Lễ tốt nghiệp của Trần Duy Khải tại Đại học Duy Tân vào ngày 16/06/2026. Sự hiện diện của mọi người là niềm vinh hạnh lớn đối với mình!",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="vi"
+      className={`${outfit.variable} ${playfair.variable} h-full scroll-smooth antialiased`}
+    >
+      <body suppressHydrationWarning className="min-h-full flex flex-col bg-[#FDFBF7] text-[#1E2022] font-sans selection:bg-[#800020] selection:text-white">
+        {children}
+      </body>
+    </html>
+  );
+}
+
