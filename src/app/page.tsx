@@ -591,7 +591,10 @@ export default function GraduationInvite() {
             <h2 className="font-serif text-2xl sm:text-3xl md:text-5xl font-black text-[#1E2022] mt-3 sm:mt-4">
               Hành Trình Ý Nghĩa
             </h2>
-            <div className="w-8 sm:w-12 h-1 bg-[#800020] mx-auto mt-3 sm:mt-4 rounded-full" />
+            <div className="w-8 sm:w-12 h-1 bg-[#800020] mx-auto mt-3 sm:mt-4 mb-4 rounded-full" />
+            <p className="mt-4 text-xs sm:text-sm md:text-base text-zinc-500 max-w-2xl mx-auto leading-relaxed italic px-4">
+              &ldquo;Bốn năm đại học là một hành trình không quá dài, nhưng đủ để lưu lại rất nhiều kỷ niệm, đủ để một người trẻ trưởng thành hơn sau từng bài học, từng lần cố gắng và từng cột mốc đã đi qua.&rdquo;
+            </p>
           </div>
 
           {/* Vertical/Zigzag Roadmap */}
@@ -619,10 +622,10 @@ export default function GraduationInvite() {
                 >
                   <div className="clay-card p-4 sm:p-6 bg-white flex flex-col justify-between flex-1">
                     <div>
-                      <span className="text-[#800020] text-[10px] sm:text-xs font-bold uppercase tracking-wider">2022 - Khởi Đầu</span>
-                      <h3 className="font-serif text-base sm:text-xl font-bold text-[#1E2022] mt-1 mb-2 sm:mb-3">Freshman Year & HelloWorld</h3>
+                      <span className="text-[#800020] text-[10px] sm:text-xs font-bold uppercase tracking-wider">2022 - Khởi Đầu Mới</span>
+                      <h3 className="font-serif text-base sm:text-xl font-bold text-[#1E2022] mt-1 mb-2 sm:mb-3">Những dòng code đầu tiên</h3>
                       <p className="text-zinc-500 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
-                        Bước chân vào giảng đường đại học với những định hướng ban đầu về công nghệ và con đường tương lai, bắt đầu với những dòng code đầu tiên và niềm đam mê cháy bỏng với lĩnh vực Trí tuệ Nhân tạo.
+                        Bước chân vào giảng đường với rất nhiều sự bỡ ngỡ trước những điều mới mẻ: bạn bè mới, thầy cô mới và môi trường mới. Đây là lúc mình bắt đầu làm quen với phương pháp học tập mới, đặt những viên gạch đầu tiên cho ước mơ và chập chững làm quen với dòng lệnh &ldquo;Hello World&rdquo; đầu đời.
                       </p>
                     </div>
                     {/* Glassmorphic Image Container */}
@@ -660,10 +663,10 @@ export default function GraduationInvite() {
                 >
                   <div className="clay-card p-4 sm:p-6 bg-white flex flex-col justify-between flex-1">
                     <div>
-                      <span className="text-[#800020] text-[10px] sm:text-xs font-bold uppercase tracking-wider">2023 - Khám Phá</span>
-                      <h3 className="font-serif text-base sm:text-xl font-bold text-[#1E2022] mt-1 mb-2 sm:mb-3">Sân Chơi AI Mới</h3>
+                      <span className="text-[#800020] text-[10px] sm:text-xs font-bold uppercase tracking-wider">2023 - Rèn Giũa & Thích Nghi</span>
+                      <h3 className="font-serif text-base sm:text-xl font-bold text-[#1E2022] mt-1 mb-2 sm:mb-3">Vượt qua những deadline</h3>
                       <p className="text-zinc-500 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
-                        Năm đầu tiên dấn thân và thử thách bản thân tại các sân chơi Trí tuệ Nhân tạo mới mẻ. Khám phá sức mạnh của các mô hình học máy và mở rộng chân trời công nghệ đầy cảm hứng.
+                        Khi mọi thứ dần trở nên quen thuộc, các bài học không còn chỉ nằm trên trang vở mà bắt đầu trở thành trải nghiệm thực tế qua các đồ án môn học. Những đêm thức khuya giải bài tập lớn, chạy deadline tuy đầy áp lực và hoang mang nhưng đã giúp mình rèn giũa bản lĩnh và sự kiên trì từng ngày.
                       </p>
                     </div>
                     {/* Glassmorphic Image Container */}
@@ -701,10 +704,10 @@ export default function GraduationInvite() {
                 >
                   <div className="clay-card p-4 sm:p-6 bg-white flex flex-col justify-between flex-1">
                     <div>
-                      <span className="text-[#800020] text-[10px] sm:text-xs font-bold uppercase tracking-wider">2024 - Nghiên Cứu</span>
-                      <h3 className="font-serif text-base sm:text-xl font-bold text-[#1E2022] mt-1 mb-2 sm:mb-3">AI và ROBOT</h3>
+                      <span className="text-[#800020] text-[10px] sm:text-xs font-bold uppercase tracking-wider">2024 - Bứt Phá & Trách Nhiệm</span>
+                      <h3 className="font-serif text-base sm:text-xl font-bold text-[#1E2022] mt-1 mb-2 sm:mb-3">Những dự án cùng đồng đội</h3>
                       <p className="text-zinc-500 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
-                        Hành trình đi sâu tiếp cận thế giới AI kết hợp cùng ROBOT. Nghiên cứu phát triển các hệ thống nhúng thông minh, robot tự hành và ứng dụng AI vào thực tiễn kỹ thuật.
+                        Một chặng đường đầy thử thách với những đồ án lớn, những buổi chuẩn bị thuyết trình căng thẳng và cả những lúc cùng đồng đội miệt mài debug đến sát giờ nộp. Qua đó, mình học được cách lắng nghe, thấu hiểu giá trị của sự hợp tác và nhận ra rằng sự trưởng thành không bao giờ đến trong một ngày.
                       </p>
                     </div>
                     {/* Glassmorphic Image Container */}
@@ -742,10 +745,10 @@ export default function GraduationInvite() {
                 >
                   <div className="clay-card p-4 sm:p-6 bg-white flex flex-col justify-between flex-1">
                     <div>
-                      <span className="text-[#800020] text-[10px] sm:text-xs font-bold uppercase tracking-wider">2026 - Tốt Nghiệp</span>
-                      <h3 className="font-serif text-base sm:text-xl font-bold text-[#1E2022] mt-1 mb-2 sm:mb-3">Lễ Tốt Nghiệp Vẻ Vang</h3>
+                      <span className="text-[#800020] text-[10px] sm:text-xs font-bold uppercase tracking-wider">2026 - Trái Ngọt & Chương Mới</span>
+                      <h3 className="font-serif text-base sm:text-xl font-bold text-[#1E2022] mt-1 mb-2 sm:mb-3">Khoảnh khắc tự hào</h3>
                       <p className="text-zinc-500 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
-                        Trái ngọt cuối cùng sau những nỗ lực học tập và rèn luyện không ngừng nghỉ. Tấm bằng cử nhân chính thức cầm trên tay, khép lại chặng đường sinh viên tươi đẹp để sẵn sàng bước ra thế giới rộng lớn.
+                        Đồ án tốt nghiệp khép lại cùng cảm xúc vừa hồi hộp vừa tiếc nuối khi nhìn lại hành trình đã qua. Trái ngọt đọng lại không chỉ là kết quả học tập, mà còn là những người bạn tri kỷ, những bài học vô giá và kỷ niệm thanh xuân tươi đẹp sẽ mãi đồng hành cùng mình trong chương mới của cuộc đời.
                       </p>
                     </div>
                     {/* Glassmorphic Image Container */}
@@ -945,9 +948,9 @@ export default function GraduationInvite() {
                 <Heart className="w-6 h-6 sm:w-7 sm:h-7 fill-[#800020] text-[#800020] animate-pulse" />
               </motion.div>
 
-              <div>
+              <div className="flex-1">
                 <p className="text-zinc-600 text-xs sm:text-sm italic leading-relaxed text-center sm:text-left">
-                  &ldquo;Sự hiện diện của mọi người là niềm vinh hạnh lớn. Xin chân thành cảm ơn!&rdquo;
+                  &ldquo;Ngày tốt nghiệp không chỉ là ngày khép lại bốn năm đại học, mà còn là ngày đánh dấu một hành trình mới sắp bắt đầu. Trong khoảnh khắc đặc biệt này, mong được chia sẻ niềm vui cùng gia đình, thầy cô, bạn bè và những người đã luôn yêu thương, đồng hành cùng mình. Sự hiện diện của mọi người sẽ là niềm hạnh phúc và là một kỷ niệm thật đẹp trong ngày đặc biệt này!&rdquo;
                 </p>
                 {/* Simulated Digital Signature */}
                 <div className="mt-3 sm:mt-4 flex justify-center sm:justify-end">
