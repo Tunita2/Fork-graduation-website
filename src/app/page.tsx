@@ -454,7 +454,7 @@ export default function GraduationInvite() {
                 <Calendar className="w-4 h-4 flex-shrink-0" /> Lưu Lịch
               </button>
               <a
-                href="https://www.google.com/maps/search/03+Quang+Trung,+%C4%90%C3%A0+N%E1%BA%B5ng" 
+                href="https://www.google.com/maps/place/C%C6%A1+s%E1%BB%9F+3+Quang+Trung+DTU/@16.0747954,108.2208087,16.25z/data=!4m6!3m5!1s0x314219ceaea9a141:0x1d2a4f713e1c9d08!8m2!3d16.075121!4d108.2230281!16s%2Fg%2F11y1jwm7wm!5m1!1e2?entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 hover:bg-white/15 text-[#F5F3EE] font-semibold border border-white/15 transition-all py-3 sm:py-3.5 px-4 sm:px-6 rounded-2xl text-xs sm:text-sm flex-1 sm:flex-none inline-flex items-center justify-center gap-2 cursor-pointer touch-manipulation"
