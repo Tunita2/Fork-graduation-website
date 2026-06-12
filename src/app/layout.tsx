@@ -29,7 +29,7 @@ export default function RootLayout({
       lang="vi"
       className={`${outfit.variable} ${playfair.variable} h-full scroll-smooth antialiased`}
     >
-      <body suppressHydrationWarning className="min-h-full flex flex-col bg-[#FDFBF7] text-[#1E2022] font-sans selection:bg-[#800020] selection:text-white">
+      <body suppressHydrationWarning className="min-h-full flex flex-col bg-[#F5F3EE] text-[#1A1A2E] font-sans selection:bg-[#0F2A4A] selection:text-white">
         {children}
       </body>
     </html>
