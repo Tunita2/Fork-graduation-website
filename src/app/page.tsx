@@ -52,8 +52,8 @@ export default function GraduationInvite() {
   // Interactive Mini-Map State (active step along the path to Building G)
   const [activeMapStep, setActiveMapStep] = useState(0);
 
-  // Target Date: June 15, 2026, 01:30 PM (GMT+7)
-  const targetDate = new Date("2026-06-15T13:30:00+07:00").getTime();
+  // Target Date: October 17, 2026, 09:30 AM (GMT+7)
+  const targetDate = new Date("2026-10-17T09:30:00+07:00").getTime();
 
   useEffect(() => {
     // Load wishes from Supabase
@@ -200,11 +200,11 @@ export default function GraduationInvite() {
 
   // Calendar Export Logic
   const handleAddToCalendar = () => {
-    const title = "Lễ Tốt Nghiệp Bùi Lê Tuấn";
-    const details = "Lễ Tốt Nghiệp Đại Học của Bùi Lê Tuấn — ngành Kỹ thuật Phần mềm CMU, Khoa Đào tạo Quốc tế, Đại Học Duy Tân. Sự hiện diện của bạn là niềm vinh hạnh lớn đối với mình!";
-    const location = "Hội trường tầng 4, cơ sở 03 Quang Trung, Đại học Duy Tân, Đà Nẵng";
-    const startDate = "20260615T133000";
-    const endDate = "20260615T163000";
+    const title = "Lễ Tốt Nghiệp Nguyễn Thị Mỹ Duyên";
+    const details = "Lễ Tốt Nghiệp Đại Học của Nguyễn Thị Mỹ Duyên — ngành Ngôn Ngữ Trung, Đại học Tôn Đức Thắng. Sự hiện diện của bạn là niềm vinh hạnh lớn!"
+    const location = "Sảnh A, Đại học Tôn Đức Thắng, Thành phố Hồ Chí Minh";
+    const startDate = "20261017T093000";
+    const endDate = "20261017T123000";
 
     // Google Calendar Link
     const gCalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${startDate}/${endDate}&details=${encodeURIComponent(details)}&location=${encodeURIComponent(location)}`;
@@ -272,17 +272,17 @@ export default function GraduationInvite() {
               {/* Photo Area */}
               <div className="relative w-full h-[85%] rounded-2xl overflow-hidden border border-zinc-100 bg-[#F5F3EE]">
                 <Image 
-                  src="/hero_avatar.jpg" 
-                  alt="Bùi Lê Tuấn Graduation" 
+                  src="/hero_avatar.png" 
+                  alt="Nguyễn Thị Mỹ Duyên Graduation" 
                   fill 
-                  className="object-cover"
+                  className="object-contain"
                   priority
                 />
               </div>
               
               {/* Signature/Label in Frame (like a Polaroid) */}
               <div className="text-center pt-3 text-[#0F2A4A] font-serif font-bold tracking-wider text-sm md:text-base">
-                🎓 Bùi Lê Tuấn &bull; DTU 2026
+                🎓 Nguyễn Thị Mỹ Duyên &bull; TDT 2026
               </div>
 
               {/* Floating overlay 3D cap/ribbon element in the corner */}
@@ -320,12 +320,12 @@ export default function GraduationInvite() {
           <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-[#1A1A2E] leading-tight max-w-4xl px-2 sm:px-3">
             Lễ Tốt Nghiệp của <br className="sm:hidden" />
             <span className="text-gold-shimmer text-shadow-3d-gold font-serif relative inline-block py-1">
-              Bùi Lê Tuấn
+              Nguyễn Thị Mỹ Duyên
             </span>
           </h1>
 
           <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg lg:text-xl text-zinc-600 max-w-xl mx-auto italic font-light px-3 sm:px-4 leading-relaxed">
-            &ldquo;Tri thức là nền tảng, nhưng chính những con người đồng hành mới làm nên giá trị của cả hành trình.&rdquo;
+            &ldquo;Bốn năm đèn sách, đôi lần vò đầu vì Hán tự; nay mượn gió Đông mang theo thi thư và mộng đẹp, để nàng thơ tuổi đôi mươi vừa dịu dàng như hoa, vừa tự tại rong ruổi giang hồ. Đường đời còn rộng, cứ xinh tươi mà bước, cứ hết mình mà thương, mà mơ! 🎓🌷&rdquo;
           </p>
         </motion.div>
       </header>
@@ -399,7 +399,7 @@ export default function GraduationInvite() {
           </AnimatePresence>
 
           <p className="mt-4 sm:mt-8 text-[10px] sm:text-xs text-zinc-400 px-2">
-            Giờ làm lễ chính thức: 13h30, Thứ Hai ngày 15/06/2026 (Múi giờ Việt Nam GMT+7)
+            Giờ làm lễ chính thức: 9h30, Thứ Bảy ngày 17/10/2026 (Múi giờ Việt Nam GMT+7)
           </p>
         </motion.div>
       </section>
@@ -426,8 +426,8 @@ export default function GraduationInvite() {
                   </div>
                   <div>
                     <h3 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white/60 mb-1">Thời gian</h3>
-                    <p className="font-serif text-lg sm:text-xl md:text-2xl font-semibold">01:30 PM &bull; Thứ Hai</p>
-                    <p className="text-zinc-300 text-xs sm:text-sm mt-1">Ngày 15 tháng 06 năm 2026</p>
+                    <p className="font-serif text-lg sm:text-xl md:text-2xl font-semibold">09:30 AM &bull; Thứ Bảy</p>
+                    <p className="text-zinc-300 text-xs sm:text-sm mt-1">Ngày 17 tháng 10 năm 2026</p>
                   </div>
                 </div>
 
@@ -437,9 +437,9 @@ export default function GraduationInvite() {
                   </div>
                   <div>
                     <h3 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white/60 mb-1">Địa điểm</h3>
-                    <p className="font-serif text-base sm:text-lg md:text-xl font-semibold">Hội trường tầng 4</p>
+                    <p className="font-serif text-base sm:text-lg md:text-xl font-semibold">Sảnh A</p>
                     <p className="text-zinc-300 text-xs sm:text-sm mt-1 leading-relaxed">
-                      Cơ sở 03 Quang Trung, Trường Đại học Duy Tân, Đà Nẵng.
+                      Đại học Tôn Đức Thắng, Thành phố Hồ Chí Minh.
                     </p>
                   </div>
                 </div>
@@ -593,7 +593,7 @@ export default function GraduationInvite() {
             </h2>
             <div className="w-8 sm:w-12 h-1 bg-[#0F2A4A] mx-auto mt-3 sm:mt-4 mb-4 rounded-full" />
             <p className="mt-4 text-xs sm:text-sm md:text-base text-zinc-500 max-w-2xl mx-auto leading-relaxed italic px-4">
-              &ldquo;Bốn năm đại học là một hành trình không quá dài, nhưng đủ để lưu lại rất nhiều kỷ niệm, đủ để một người trẻ trưởng thành hơn sau từng bài học, từng lần cố gắng và từng cột mốc đã đi qua.&rdquo;
+              &ldquo;Bốn năm thanh xuân, một hành trình từ những nét Hán tự đầu tiên đến những vần thơ Đường đầy thi vị. Có những ngày say mê khám phá một nền văn hóa mới, có những đêm vật lộn với thanh điệu và ngữ pháp, cũng có những tháng năm rực rỡ bên bạn bè. Hóa ra, học một ngôn ngữ không chỉ là học cách nói lời hay, mà còn là học cách nhìn thế giới bằng một lăng kính khác, để rồi trưởng thành lúc nào chẳng hay.&rdquo;
             </p>
           </div>
 
@@ -622,18 +622,18 @@ export default function GraduationInvite() {
                 >
                   <div className="clay-card p-4 sm:p-6 bg-white flex flex-col justify-between flex-1">
                     <div>
-                      <span className="text-[#0F2A4A] text-[10px] sm:text-xs font-bold uppercase tracking-wider">2022 — Khởi Đầu Hành Trình</span>
-                      <h3 className="font-serif text-base sm:text-xl font-bold text-[#1A1A2E] mt-1 mb-2 sm:mb-3">Bước chân vào giảng đường</h3>
+                      <span className="text-[#0F2A4A] text-[10px] sm:text-xs font-bold uppercase tracking-wider">2022 — Nét Mực Đầu Tiên</span>
+                      <h3 className="font-serif text-base sm:text-xl font-bold text-[#1A1A2E] mt-1 mb-2 sm:mb-3">初识中文 &middot; Chập chắng làm quen</h3>
                       <p className="text-zinc-500 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
-                        Năm đầu tiên là quãng thời gian đầy bỡ ngỡ khi bước vào một môi trường hoàn toàn mới — bạn bè mới, thầy cô mới và phương pháp học tập mới. Đây cũng là lúc đặt những viên gạch nền tảng đầu tiên cho con đường chuyên môn, từng bước làm quen với tư duy lập trình và khám phá niềm đam mê với ngành Kỹ thuật phần mềm.
+                        Bước vào giảng đường với một chút bỡ ngỡ, một chút háo hức và cả một bầu trời tò mò về ngôn ngữ, con người và văn hóa Trung Hoa. Từ những nét chữ tưởng chẳng khó nhằn, những thanh điệu cứ mãi lên xuống đến những câu giao tiếp đầu tiên, từng chút một, thế giới mới dần mở ra. Khi ấy nào biết rằng, những chữ Hán nhỏ bé lại có thể mở đầu cho một hành trình thanh xuân đáng nhớ đến thế.
                       </p>
                     </div>
                     {/* Glassmorphic Image Container */}
                     <div className="relative h-40 sm:h-48 w-full rounded-2xl overflow-hidden glass-card p-1">
                       <div className="relative w-full h-full rounded-xl overflow-hidden">
                         <Image
-                          src="/freshman.png"
-                          alt="Freshman Year Milestone"
+                          src="/2022-minestone.png"
+                          alt="2022 Milestone"
                           fill
                           className="object-cover hover:scale-105 transition-transform duration-500"
                         />
@@ -663,18 +663,18 @@ export default function GraduationInvite() {
                 >
                   <div className="clay-card p-4 sm:p-6 bg-white flex flex-col justify-between flex-1">
                     <div>
-                      <span className="text-[#0F2A4A] text-[10px] sm:text-xs font-bold uppercase tracking-wider">2023 — Rèn Luyện và Thích Nghi</span>
-                      <h3 className="font-serif text-base sm:text-xl font-bold text-[#1A1A2E] mt-1 mb-2 sm:mb-3">Vượt qua thử thách</h3>
+                      <span className="text-[#0F2A4A] text-[10px] sm:text-xs font-bold uppercase tracking-wider">2023 — Say Chữ, Say Văn</span>
+                      <h3 className="font-serif text-base sm:text-xl font-bold text-[#1A1A2E] mt-1 mb-2 sm:mb-3">以文会友 &middot; Gặp gỡ qua văn chương</h3>
                       <p className="text-zinc-500 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
-                        Khi mọi thứ dần trở nên quen thuộc, các bài học không còn chỉ nằm trên trang giấy mà bắt đầu trở thành trải nghiệm thực tế qua từng đồ án môn học. Những đêm thức khuya hoàn thành bài tập lớn, chạy đua với thời hạn tuy đầy áp lực nhưng đã rèn giũa bản lĩnh, tính kỷ luật và sự kiên trì mỗi ngày.
+                        Những bài khóa dài hơn, những đoạn văn khó nhằn hơn, rồi cả thi ca, thành ngữ và những câu chuyện văn hóa phía sau từng con chữ. Có lúc học đến &ldquo;tẩu hỏa nhập ma&rdquo; vì ngữ pháp, có lúc lại rung rinh trước một câu thơ Đường hay một điển tích cổ. Càng học càng nhận ra, ngôn ngữ chẳng chỉ nằm trên trang sách, mà còn cất giữ cả một nền văn minh với bao điều thú vị.
                       </p>
                     </div>
                     {/* Glassmorphic Image Container */}
                     <div className="relative h-40 sm:h-48 w-full rounded-2xl overflow-hidden glass-card p-1">
                       <div className="relative w-full h-full rounded-xl overflow-hidden">
                         <Image
-                          src="/tryhard-coding.png"
-                          alt="AI Playgrounds Milestone"
+                          src="/2023-minestone.png"
+                          alt="2023 Milestone"
                           fill
                           className="object-cover hover:scale-105 transition-transform duration-500"
                         />
@@ -704,18 +704,18 @@ export default function GraduationInvite() {
                 >
                   <div className="clay-card p-4 sm:p-6 bg-white flex flex-col justify-between flex-1">
                     <div>
-                      <span className="text-[#0F2A4A] text-[10px] sm:text-xs font-bold uppercase tracking-wider">2024 — Bứt Phá và Trưởng Thành</span>
-                      <h3 className="font-serif text-base sm:text-xl font-bold text-[#1A1A2E] mt-1 mb-2 sm:mb-3">Đồng hành cùng đồng đội</h3>
+                      <span className="text-[#0F2A4A] text-[10px] sm:text-xs font-bold uppercase tracking-wider">2024 — Rong Ruổi Cùng Thanh Xuân</span>
+                      <h3 className="font-serif text-base sm:text-xl font-bold text-[#1A1A2E] mt-1 mb-2 sm:mb-3">青春作伴 &middot; Thanh xuân có bạn đồng hành</h3>
                       <p className="text-zinc-500 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
-                        Một chặng đường đầy thử thách với những đồ án quy mô lớn, những buổi thuyết trình căng thẳng và cả những lúc cùng đồng đội miệt mài sửa lỗi chương trình đến sát giờ nộp. Qua đó, tôi học được cách lắng nghe, thấu hiểu giá trị của sự hợp tác và nhận ra rằng sự trưởng thành là một quá trình tích lũy từng ngày.
+                        Từ những buổi thuyết trình hồi hộp đến những lần luyện nói, làm bài nhóm và cùng nhau chạy đua với thời hạn, mỗi trải nghiệm đều góp thêm một mảnh ghép cho thanh xuân. Có những ngày bận đến mức chẳng kịp ngắm trời, cũng có những khoảnh khắc cười mãi vì vài câu tiếng Trung &ldquo;đi vào lòng đất&rdquo;. Rồi nhận ra, điều quý giá nhất không chỉ là tiến bộ trong ngôn ngữ, mà còn là những người bạn đã cùng mình đi qua một đoạn đường thật đẹp.
                       </p>
                     </div>
                     {/* Glassmorphic Image Container */}
                     <div className="relative h-40 sm:h-48 w-full rounded-2xl overflow-hidden glass-card p-1">
                       <div className="relative w-full h-full rounded-xl overflow-hidden">
                         <Image
-                          src="/ai-robot.png"
-                          alt="AI and Robot Milestone"
+                          src="/2024-minestone.png"
+                          alt="2024 Milestone"
                           fill
                           className="object-cover hover:scale-105 transition-transform duration-500"
                         />
@@ -745,18 +745,18 @@ export default function GraduationInvite() {
                 >
                   <div className="clay-card p-4 sm:p-6 bg-white flex flex-col justify-between flex-1">
                     <div>
-                      <span className="text-[#0F2A4A] text-[10px] sm:text-xs font-bold uppercase tracking-wider">2026 — Gặt Hái và Khởi Đầu Mới</span>
-                      <h3 className="font-serif text-base sm:text-xl font-bold text-[#1A1A2E] mt-1 mb-2 sm:mb-3">Khoảnh khắc vinh danh</h3>
+                      <span className="text-[#0F2A4A] text-[10px] sm:text-xs font-bold uppercase tracking-wider">2026 — Hoa Khai Hữu Kỳ</span>
+                      <h3 className="font-serif text-base sm:text-xl font-bold text-[#1A1A2E] mt-1 mb-2 sm:mb-3">花开有期 &middot; Hoa nở có ngày</h3>
                       <p className="text-zinc-500 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
-                        Đồ án tốt nghiệp khép lại bốn năm đại học với bao cảm xúc vừa tự hào vừa lưu luyến. Thành quả đọng lại không chỉ là tấm bằng cử nhân, mà còn là những tình bạn tri kỷ, những bài học vô giá và ký ức thanh xuân tươi đẹp sẽ mãi đồng hành trong chương mới của cuộc đời.
+                        Ngày tốt nghiệp đến, bỗng thấy bốn năm trôi qua nhanh như một cái chớp mắt. Những nét chữ từng viết đi viết lại, những bài học từng khiến mình đau đầu và những tháng ngày tưởng dài vô tận nay đều hóa thành kỷ niệm. Tấm bằng trên tay là dấu mốc của một hành trình, nhưng điều mang theo còn là tình bạn, sự trưởng thành và một chút mộng mơ của cô gái từng say mê những con chữ. Giang hồ ngoài kia rộng lớn, tương lai còn dài, cứ mang theo vốn liếng đã học, giữ lấy nét dịu dàng của mình và tự tin bước tiếp thôi.
                       </p>
                     </div>
                     {/* Glassmorphic Image Container */}
                     <div className="relative h-40 sm:h-48 w-full rounded-2xl overflow-hidden glass-card p-1">
                       <div className="relative w-full h-full rounded-xl overflow-hidden">
                         <Image
-                          src="/graduation.png"
-                          alt="Graduation Milestone"
+                          src="/2026-minestone.png"
+                          alt="2026 Milestone"
                           fill
                           className="object-cover hover:scale-105 transition-transform duration-500"
                         />
@@ -950,13 +950,13 @@ export default function GraduationInvite() {
 
               <div className="flex-1">
                 <p className="text-zinc-600 text-xs sm:text-sm italic leading-relaxed text-center sm:text-left">
-                  &ldquo;Ngày tốt nghiệp không chỉ là ngày khép lại bốn năm đại học, mà còn là ngày đánh dấu một hành trình mới sắp bắt đầu. Trong khoảnh khắc đặc biệt này, mong được chia sẻ niềm vui cùng gia đình, thầy cô, bạn bè và những người đã luôn yêu thương, đồng hành cùng mình. Sự hiện diện của mọi người sẽ là niềm hạnh phúc và là một kỷ niệm thật đẹp trong ngày đặc biệt này!&rdquo;
+                  &ldquo;Bốn năm thanh xuân, cảm ơn vì đã có mọi người cùng viết nên những trang ký ức thật đẹp. Cảm ơn gia đình luôn là bến đỗ bình yên, thầy cô đã tận tâm dìu dắt, và bạn bè đã cùng mình đi qua những ngày vui buồn dưới mái trường. Nếu thanh xuân là một cuốn sách, thì mọi người chính là những chương đáng yêu mà mình chẳng nỡ lật qua thật nhanh. Ngày hôm nay, trang sách đại học khép lại, nhưng câu chuyện của chúng ta vẫn còn những phần tiếp theo. Mong rằng sau này, dù mỗi người đi về một phương trời, ta vẫn có thể mỉm cười khi nhớ về những năm tháng ấy, như nhớ một mùa hoa đã nở rực rỡ trong đời. 谢谢你们，让我的青春如此美好！ &mdash; Cảm ơn mọi người đã khiến thanh xuân của mình trở nên tươi đẹp đến thế!&rdquo;
                 </p>
                 {/* Simulated Digital Signature */}
                 <div className="mt-3 sm:mt-4 flex justify-center sm:justify-end">
                   <div className="text-right">
                     <span className="font-serif text-base sm:text-lg font-bold text-[#D4AF37] tracking-wide block">
-                      Bùi Lê Tuấn
+                      Mỹ Duyên
                     </span>
                     <span className="text-[8px] sm:text-[10px] text-zinc-400 uppercase tracking-widest">
                       Tốt Nghiệp 2026
