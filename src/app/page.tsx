@@ -177,23 +177,23 @@ export default function GraduationInvite() {
   // Mini-map step descriptions
   const mapSteps = [
     {
-      title: "Cổng chính cơ sở 03 Quang Trung",
-      desc: "Đi vào cổng chính của cơ sở 03 Quang Trung, Trường Đại học Duy Tân.",
+      title: "Cổng chính ĐH Tôn Đức Thắng",
+      desc: "Vào cổng chính trường tại 19 Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7, TP.HCM.",
       coords: { x: "10%", y: "85%" }
     },
     {
-      title: "Sảnh chính tòa nhà",
-      desc: "Đi thẳng vào sảnh chính của tòa nhà, hướng về phía thang máy hoặc cầu thang bộ.",
+      title: "Đi thẳng theo trục chính",
+      desc: "Đi thẳng theo đường trục chính của trường, nhìn biển chỉ dẫn hướng đến Sảnh A.",
       coords: { x: "35%", y: "60%" }
     },
     {
-      title: "Lên tầng 4",
-      desc: "Sử dụng thang máy hoặc cầu thang bộ để di chuyển lên tầng 4 của tòa nhà.",
+      title: "Tòa nhà Sảnh A",
+      desc: "Sảnh A nằm ở khu vực trung tâm trường, gần sân khấu ngoài trời. Hỏi bảo vệ nếu cần hỗ trợ.",
       coords: { x: "65%", y: "40%" }
     },
     {
-      title: "Hội trường tầng 4",
-      desc: "Hội trường tầng 4 — nơi diễn ra Lễ trao bằng Tốt nghiệp chính thức.",
+      title: "Sảnh A — Nơi tổ chức lễ",
+      desc: "Sảnh A — nơi diễn ra Lễ trao bằng Tốt nghiệp của Nguyễn Thị Mỹ Duyên lúc 9h30.",
       coords: { x: "90%", y: "15%" }
     }
   ];
@@ -275,7 +275,7 @@ export default function GraduationInvite() {
                   src="/hero_avatar.png" 
                   alt="Nguyễn Thị Mỹ Duyên Graduation" 
                   fill 
-                  className="object-contain"
+                  className="object-cover"
                   priority
                 />
               </div>
@@ -477,18 +477,18 @@ export default function GraduationInvite() {
               <div className="w-full h-full rounded-2xl overflow-hidden relative">
                 {/* Burgundy styled tint overlay - maps iframe has mix-blend-mode for styling */}
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.0!2d108.2!3d16.07!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219c0f3a5d2b1%3A0x1234567890abcdef!2s03+Quang+Trung%2C+%C4%90%C3%A0+N%E1%BA%B5ng!5e0!3m2!1svi!2s!4v1717830000000!5m2!1svi!2s" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.234567!2d106.6993!3d10.7291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fb1ba4fea23%3A0xb3c2a0f1e1c5e8b2!2zVHLGsOG7nW5nIMSQYWkgaOG7jWMgVMO0biBE4bupYyBUaOG6r25n!5e0!3m2!1svi!2s!4v1728645600000!5m2!1svi!2s" 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0, filter: "sepia(8%) hue-rotate(190deg) saturate(85%) contrast(105%)" }} 
                   allowFullScreen={false} 
                   loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="DTU Campus Map - 03 Quang Trung"
+                  title="Ton Duc Thang University - 19 Nguyen Huu Tho, Q7"
                 ></iframe>
                 {/* Elegant map label */}
                 <div className="absolute bottom-3 right-3 bg-[#0F2A4A] text-white text-[10px] font-bold uppercase tracking-wider py-1.5 px-3 rounded-lg shadow-md border border-[#D4AF37]/20 pointer-events-none">
-                  DTU - 03 Quang Trung
+                  ĐH Tôn Đức Thắng — Sảnh A
                 </div>
               </div>
             </div>
@@ -498,7 +498,7 @@ export default function GraduationInvite() {
               <div>
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 sm:gap-4 mb-3 sm:mb-4">
                   <h3 className="font-serif text-base sm:text-lg font-bold text-[#1A1A2E] flex items-center gap-2 flex-shrink-0">
-                    <Compass className="w-4 h-4 sm:w-5 sm:h-5 text-[#0F2A4A] animate-pulse flex-shrink-0" /> <span className="hidden sm:inline">Sơ đồ dẫn đến Hội trường tầng 4</span><span className="sm:hidden">Sơ Đồ</span>
+                    <Compass className="w-4 h-4 sm:w-5 sm:h-5 text-[#0F2A4A] animate-pulse flex-shrink-0" /> <span className="hidden sm:inline">Sơ đồ dẫn đến Sảnh A — ĐH Tôn Đức Thắng</span><span className="sm:hidden">Sơ Đồ</span>
                   </h3>
                   <span className="text-[10px] sm:text-xs text-zinc-500 font-medium">Bấm vào các mốc</span>
                 </div>
@@ -623,7 +623,7 @@ export default function GraduationInvite() {
                   <div className="clay-card p-4 sm:p-6 bg-white flex flex-col justify-between flex-1">
                     <div>
                       <span className="text-[#0F2A4A] text-[10px] sm:text-xs font-bold uppercase tracking-wider">2022 — Nét Mực Đầu Tiên</span>
-                      <h3 className="font-serif text-base sm:text-xl font-bold text-[#1A1A2E] mt-1 mb-2 sm:mb-3">初识中文 &middot; Chập chắng làm quen</h3>
+                      <h3 className="font-serif text-base sm:text-xl font-bold text-[#1A1A2E] mt-1 mb-2 sm:mb-3">初识中文 &middot; Chập chững làm quen</h3>
                       <p className="text-zinc-500 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
                         Bước vào giảng đường với một chút bỡ ngỡ, một chút háo hức và cả một bầu trời tò mò về ngôn ngữ, con người và văn hóa Trung Hoa. Từ những nét chữ tưởng chẳng khó nhằn, những thanh điệu cứ mãi lên xuống đến những câu giao tiếp đầu tiên, từng chút một, thế giới mới dần mở ra. Khi ấy nào biết rằng, những chữ Hán nhỏ bé lại có thể mở đầu cho một hành trình thanh xuân đáng nhớ đến thế.
                       </p>
