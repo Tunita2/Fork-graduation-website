@@ -454,7 +454,7 @@ export default function GraduationInvite() {
                 <Calendar className="w-4 h-4 flex-shrink-0" /> Lưu Lịch
               </button>
               <a
-                href="https://www.google.com/maps/dir/?api=1&destination=19+Nguy%E1%BB%85n+H%E1%BB%AFu+Th%E1%BB%8D%2C+T%C3%A2n+H%C6%B0ng%2C+Qu%E1%BA%ADn+7%2C+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh&destination_place_id=ChIJ23-xG7EpdDERSSggkOobwpQ" 
+                href="https://www.google.com/maps/place/%C4%90%E1%BA%A1i+h%E1%BB%8Dc+T%C3%B4n+%C4%90%E1%BB%A9c+Th%E1%BA%AFng/@10.7319367,106.6967669,815m/data=!3m2!1e3!4b1!4m6!3m5!1s0x317528b2747a81a3:0x33c1813055acb613!8m2!3d10.7319314!4d106.6993418!16s%2Fm%2F02q2bz4?hl=vi&entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 hover:bg-white/15 text-[#F5F3EE] font-semibold border border-white/15 transition-all py-3 sm:py-3.5 px-4 sm:px-6 rounded-2xl text-xs sm:text-sm flex-1 sm:flex-none inline-flex items-center justify-center gap-2 cursor-pointer touch-manipulation"
@@ -477,7 +477,7 @@ export default function GraduationInvite() {
               <div className="w-full h-full rounded-2xl overflow-hidden relative">
                 {/* Burgundy styled tint overlay - maps iframe has mix-blend-mode for styling */}
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.295743757!2d106.6969222757!3d10.7290626894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fb1ba4fea23%3A0x9e0cdc3b2c5e0b80!2zVHLGsOG7nW5nIMSQYWkgaOG7jWMgVMO0biBE4bupYyBUaOG6r25n!5e0!3m2!1svi!2s!4v1728648000000!5m2!1svi!2s" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2374!2d106.6969669!3d10.7319314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528b2747a81a3%3A0x33c1813055acb613!2zxJDhuqFpIGjhu41jIFTDtG4gxJDhu6ljIFRow6fuZw!5e0!3m2!1svi!2s!4v1728648000000!5m2!1svi!2s" 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0, filter: "sepia(8%) hue-rotate(190deg) saturate(85%) contrast(105%)" }} 
