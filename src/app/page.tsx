@@ -454,7 +454,7 @@ export default function GraduationInvite() {
                 <Calendar className="w-4 h-4 flex-shrink-0" /> Lưu Lịch
               </button>
               <a
-                href="https://www.google.com/maps/place/C%C6%A1+s%E1%BB%9F+3+Quang+Trung+DTU/@16.0747954,108.2208087,16.25z/data=!4m6!3m5!1s0x314219ceaea9a141:0x1d2a4f713e1c9d08!8m2!3d16.075121!4d108.2230281!16s%2Fg%2F11y1jwm7wm!5m1!1e2?entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D" 
+                href="https://www.google.com/maps/dir/?api=1&destination=19+Nguy%E1%BB%85n+H%E1%BB%AFu+Th%E1%BB%8D%2C+T%C3%A2n+H%C6%B0ng%2C+Qu%E1%BA%ADn+7%2C+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh&destination_place_id=ChIJ23-xG7EpdDERSSggkOobwpQ" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 hover:bg-white/15 text-[#F5F3EE] font-semibold border border-white/15 transition-all py-3 sm:py-3.5 px-4 sm:px-6 rounded-2xl text-xs sm:text-sm flex-1 sm:flex-none inline-flex items-center justify-center gap-2 cursor-pointer touch-manipulation"
@@ -477,14 +477,14 @@ export default function GraduationInvite() {
               <div className="w-full h-full rounded-2xl overflow-hidden relative">
                 {/* Burgundy styled tint overlay - maps iframe has mix-blend-mode for styling */}
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.234567!2d106.6993!3d10.7291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fb1ba4fea23%3A0xb3c2a0f1e1c5e8b2!2zVHLGsOG7nW5nIMSQYWkgaOG7jWMgVMO0biBE4bupYyBUaOG6r25n!5e0!3m2!1svi!2s!4v1728645600000!5m2!1svi!2s" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.295743757!2d106.6969222757!3d10.7290626894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fb1ba4fea23%3A0x9e0cdc3b2c5e0b80!2zVHLGsOG7nW5nIMSQYWkgaOG7jWMgVMO0biBE4bupYyBUaOG6r25n!5e0!3m2!1svi!2s!4v1728648000000!5m2!1svi!2s" 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0, filter: "sepia(8%) hue-rotate(190deg) saturate(85%) contrast(105%)" }} 
                   allowFullScreen={false} 
                   loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Ton Duc Thang University - 19 Nguyen Huu Tho, Q7"
+                  title="Đại học Tôn Đức Thắng - 19 Nguyễn Hữu Thọ, Tân Hưng, Q7"
                 ></iframe>
                 {/* Elegant map label */}
                 <div className="absolute bottom-3 right-3 bg-[#0F2A4A] text-white text-[10px] font-bold uppercase tracking-wider py-1.5 px-3 rounded-lg shadow-md border border-[#D4AF37]/20 pointer-events-none">
