@@ -581,8 +581,8 @@ export default function GraduationInvite() {
         </div>
       </section>
 
-      {/* Journey Timeline Gallery */}
-      <section className="relative w-full py-12 sm:py-16 px-3 sm:px-4 z-10 bg-[#0F2A4A]/3">
+      {/* Journey Timeline Gallery - HIDDEN */}
+      {false && (<section className="relative w-full py-12 sm:py-16 px-3 sm:px-4 z-10 bg-[#0F2A4A]/3">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
             <span className="text-[#0F2A4A] text-[10px] sm:text-xs font-bold uppercase tracking-widest bg-[#0F2A4A]/10 px-3 sm:px-3.5 py-1.5 rounded-full inline-block">
@@ -771,7 +771,7 @@ export default function GraduationInvite() {
             </div>
           </div>
         </div>
-      </section>
+      </section>)}
 
       {/* Guestbook & Thank You Section */}
       <section className="relative w-full max-w-6xl mx-auto px-3 sm:px-4 py-12 sm:py-16 z-10">
